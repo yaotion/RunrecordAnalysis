@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2013-04-24 09:19:51.687.pas,D:\share\公司组件\通用运记分析\02_开发\Source\运行记录读取\uGetInfoFromRuntimeFile.pas=D:\share\公司组件\通用运记分析\02_开发\Source\运行记录读取\uRunTimeFileReaderEx.pas</Transaction>
+    <Transaction>2013-04-24 09:19:59.265.pas,D:\share\公司组件\通用运记分析\02_开发\Source\运行记录读取\uRunTimerFileReader.pas=D:\share\公司组件\通用运记分析\02_开发\Source\运行记录读取\uRunTimeFileReader.pas</Transaction>
+    <Transaction>2013-04-24 14:36:54.453.pas,D:\share\公司组件\通用运记分析\02_开发\Source\运行记录读取\uGetInfoFromRuntimeFile.pas=</Transaction>
+    <Transaction>2013-04-24 14:57:28.703.pas,D:\share\公司组件\通用运记分析\02_开发\Source\运行记录读取\uRunTimeFileReader.pas=D:\share\公司组件\通用运记分析\02_开发\Source\运行记录读取\uRunTimerFileReader.pas</Transaction>
+    <Transaction>2013-10-14 10:34:09.843.pas,D:\share\公司组件\通用运记分析\02_开发\Source\运行记录读取\uAnalysisOrgFile.pas=D:\share\公司组件\通用运记分析\02_开发\Source\运行记录读取\uOrgFileReader.pas</Transaction>
+    <Transaction>2013-10-14 10:34:47.500.pas,D:\share\公司组件\通用运记分析\02_开发\Source\运行记录读取\uRunTimeFileReaderEx.pas=D:\share\公司组件\通用运记分析\02_开发\Source\运行记录读取\ufmtFileReaderx.pas</Transaction>
+    <Transaction>2013-10-14 10:34:52.781.pas,D:\share\公司组件\通用运记分析\02_开发\Source\运行记录读取\ufmtFileReaderx.pas=D:\share\公司组件\通用运记分析\02_开发\Source\运行记录读取\ufmtFileReader.pas</Transaction>
+    <Transaction>2013-10-14 10:38:26.859.pas,D:\share\公司组件\通用运记分析\02_开发\Source\Unit1.pas=D:\share\公司组件\通用运记分析\02_开发\Source\运行记录读取\uConvertDefine.pas</Transaction>
+    <Transaction>2013-10-14 10:47:40.859.pas,D:\share\公司组件\通用运记分析\02_开发\Source\运行记录读取\ufmtFileReader.pas=D:\share\公司组件\通用运记分析\02_开发\Source\运行记录读取\uRunTimeFileReaderEx.pas</Transaction>
+    <Transaction>2013-10-14 11:04:53.187.pas,D:\share\公司组件\通用运记分析\02_开发\Source\运行记录读取\uRunTimeFileReaderEx.pas=D:\share\公司组件\通用运记分析\02_开发\Source\运行记录读取\ufmtFileReader.pas</Transaction>
+    <Transaction>2013-10-14 11:15:28.968.pas,D:\share\公司组件\通用运记分析\02_开发\Source\运行记录读取\uRunTimerFileReader.pas=D:\share\公司组件\通用运记分析\02_开发\Source\运行记录读取\uRunTimeFileReader.pas</Transaction>
+    <Transaction>2013-10-14 12:33:41.828.pas,D:\share\公司组件\通用运记分析\02_开发\Source\Unit1.pas=D:\share\公司组件\通用运记分析\02_开发\Source\运行记录读取\uAdoFileReader.pas</Transaction>
+    <Transaction>2013-10-14 12:59:40.562.pas,D:\share\公司组件\通用运记分析\02_开发\Source\Unit1.pas=D:\share\公司组件\通用运记分析\02_开发\Source\运行记录读取\uRunTimeFileReaderBase.pas</Transaction>
+    <Transaction>2013-10-14 13:13:01.062.pas,D:\share\公司组件\通用运记分析\02_开发\Source\运行记录读取\uAdoFileReader.pas=</Transaction>
+    <Transaction>2013-10-14 13:35:21.671.pas,D:\share\公司组件\通用运记分析\02_开发\Source\Unit1.pas=D:\share\公司组件\通用运记分析\02_开发\Source\运行记录读取\uXMLlkjFileReader.pas</Transaction>
+    <Transaction>2013-10-14 13:37:07.875.pas,D:\share\公司组件\通用运记分析\02_开发\Source\运行记录读取\uRunTimeFileReader.pas=D:\share\公司组件\通用运记分析\02_开发\Source\运行记录读取\uAdoFileReader.pas</Transaction>
+    <Transaction>2013-12-11 10:33:18.921.pas,D:\share\公司组件\通用运记分析\02_开发\Source\运行记录读取\uAdoFileReader.pas=D:\share\公司组件\通用运记分析\02_开发\Source\运行记录读取\uRtFileFromADOReader.pas</Transaction>
+    <Transaction>2013-12-11 10:33:37.500.pas,D:\share\公司组件\通用运记分析\02_开发\Source\运行记录读取\ufmtFileReader.pas=D:\share\公司组件\通用运记分析\02_开发\Source\运行记录读取\uRtFileReaderFromfmt.pas</Transaction>
+    <Transaction>2013-12-11 10:33:47.921.pas,D:\share\公司组件\通用运记分析\02_开发\Source\运行记录读取\uRtFileFromADOReader.pas=D:\share\公司组件\通用运记分析\02_开发\Source\运行记录读取\uRtFileReaderFromADO.pas</Transaction>
+    <Transaction>2013-12-11 10:34:44.937.pas,D:\share\公司组件\通用运记分析\02_开发\Source\运行记录读取\uOrgFileReader.pas=D:\share\公司组件\通用运记分析\02_开发\Source\运行记录读取\uRtOrgFileReader.pas</Transaction>
+    <Transaction>2013-12-11 10:35:09.468.pas,D:\share\公司组件\通用运记分析\02_开发\Source\运行记录读取\uHeadInfoReader.pas=D:\share\公司组件\通用运记分析\02_开发\Source\运行记录读取\uRtHeadInfoReader.pas</Transaction>
+    <Transaction>2013-12-11 10:35:15.765.pas,D:\share\公司组件\通用运记分析\02_开发\Source\运行记录读取\uRunTimeFileReaderBase.pas=D:\share\公司组件\通用运记分析\02_开发\Source\运行记录读取\uRtFileReaderBase.pas</Transaction>
+    <Transaction>2013-12-11 10:39:51.015.pas,D:\share\公司组件\通用运记分析\02_开发\Source\运行记录读取\uRtFileReaderFromADO.pas=D:\share\公司组件\通用运记分析\02_开发\Source\运行记录读取\uRtFileReaderByAdo.pas</Transaction>
+    <Transaction>2013-12-11 10:40:21.421.pas,D:\share\公司组件\通用运记分析\02_开发\Source\运行记录读取\uRtFileReaderByAdo.pas=D:\share\公司组件\通用运记分析\02_开发\Source\运行记录读取\uRtAdoFileReader.pas</Transaction>
+    <Transaction>2013-12-11 10:41:01.234.pas,D:\share\公司组件\通用运记分析\02_开发\Source\运行记录读取\uRtFileReaderFromfmt.pas=D:\share\公司组件\通用运记分析\02_开发\Source\运行记录读取\uRtfmtFileReader.pas</Transaction>
+  </Transactions>
+</BorlandProject>

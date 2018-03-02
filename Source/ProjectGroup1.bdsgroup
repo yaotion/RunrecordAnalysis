@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <PersonalityInfo>
+    <Option>
+      <Option Name="Personality">Default.Personality</Option>
+      <Option Name="ProjectType"></Option>
+      <Option Name="Version">1.0</Option>
+      <Option Name="GUID">{84E7C99A-2FA9-4B02-98A9-E5C50D0A0153}</Option>
+    </Option>
+  </PersonalityInfo>
+  <Default.Personality>
+    
+    
+    
+    <Projects>
+      <Projects Name="RunrecordAnalysisTest.exe">RunrecordAnalysisTest.bdsproj</Projects>
+      <Projects Name="RunrecordAnalysis.bpl">RunrecordAnalysis.bdsproj</Projects>
+      <Projects Name="Targets">RunrecordAnalysisTest.exe RunrecordAnalysis.bpl</Projects>
+    </Projects>
+    <Dependencies/>
+  </Default.Personality>
+</BorlandProject>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RunrecordExpress>
+  <Express Type="TVSCompExpression" Key="" OperatorSignal="" Value="">    
+  </Express>
+  <Express Type="TVSOrderExpression" Key="" Order="">
+  </Express>
+  <Express Type="TVSOffsetExpression" Key="" Order="" Value="" IncludeEqual="" BreakLimit="">
+  </Express>
+  <Express Type="TVSCompBehindExpression" Key="" OperatorSignal="" Value="" FrontExp="" BehindExp="">
+  </Express>
+  <Express Type="TVSCompBehindExpression">
+    <Expression></Expression>
+  </Express>
+  <Express Type="TVSCombAndExpression">
+      <Express />
+      <Express />
+      <Express />
+  </Express>
+
+
+  <Express Type="TVSCombOrExpression">
+      <Express />
+      <Express />
+      <Express />
+  </Express>
+
+  <Express Type="TVSCombOrderExpression" MatchedIndex="1" BeginIndex="0" EndIndex="2">
+      <Express />
+      <Express />
+      <Express />
+  </Express>
+
+  <Express Type="TVSCombIntervalExpression" MatchFirst="False" MatchMatch="True" ReturnType="2">
+    <BeginExpress />
+    <Expression />
+    <EndExpress />
+  </Express>
+
+  <Express Type="TVSCombNoIntervalExpression">
+    <BeginExpress />
+    <Expression />
+    <EndExpress />
+  </Express>
+</RunrecordExpress>

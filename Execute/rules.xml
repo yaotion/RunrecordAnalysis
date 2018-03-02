@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="GB2312"?>
+<RunrecordRules>
+  <Rule ID ="1001" Title="开车事件" IsVS="True">
+    <RootExpression Type="TVSCombNoIntervalExpression" Title="非调车模式下速度由0到3">
+      <BeginExpress Type="TVSCompExpression" Key="20000" OperatorSignal="2" Value="34318" Title="事件为进入调车"/>
+      <Expression  Type="TVSCombOrderExpression" MatchedIndex="2" BeginIndex="2" EndIndex="2" Title="速度从0到3">
+        <Express Type="TVSCompExpression" Key="30002" OperatorSignal="2" Value="0" Title="速度为0" />
+        <Express Type="TVSCombAndExpression" Title="速度上升但小于2">
+          <Express Type="TVSOrderExpression" Key="30002" Order="0" Title="速度上升"/>
+          <Express Type="TVSCompExpression" Key="30002" OperatorSignal="1" Value="3" Title="速度小于3" />
+        </Express>
+        <Express Type="TVSCompExpression" Key="30002" OperatorSignal="4" Value="3" Title="速度大于等于3" />
+      </Expression>
+      <EndExpress Type="TVSCompExpression" Key="20000" OperatorSignal="2" Value="34319" Title="事件为退出调车"/>
+    </RootExpression>
+  </Rule>
+  <Rule ID ="1002" Title="停车事件" IsVS="True">
+    <RootExpression Type="TVSCombOrderExpression" MatchedIndex="2" BeginIndex="2" EndIndex="2" Title="监控模式下速度从大于等于3到0">
+      <Express Type="TVSCompExpression" Key="30002" OperatorSignal="4" Value="3" Title="速度大于等于3" />
+      <Express Type="TVSCombAndExpression" Title="速度下降但大于0">
+        <Express Type="TVSOrderExpression" Key="30002" Order="1" Title="速度下降"/>
+        <Express Type="TVSCompExpression" Key="30002" OperatorSignal="0" Value="0" Title="速度大于0" />
+      </Express>
+      <Express Type="TVSCompExpression" Key="30002" OperatorSignal="2" Value="0" Title="速度等于0" />
+    </RootExpression>
+  </Rule>
+
+  <Rule ID ="1004" Title="侧线运行事件" IsVS="True">
+    <RootExpression Type="TVSCombIntervalExpression" MatchFirst="False" MatchMatch="True" ReturnType="2" Title="信号灯从双黄灯到非双黄灯">
+      <BeginExpress Type="TVSCompExpression" Key="30008" OperatorSignal="2" Value="4" Title="信号等为双黄灯"/>
+      <Expression Type="TVSCompExpression" Key="30008" OperatorSignal="2" Value="4" Title="信号等为双黄灯"/>
+      <EndExpress Type="TVSCompExpression" Key="20000" OperatorSignal="2" Value="35329" Title="事件为机车信号变化"/>
+    </RootExpression>
+  </Rule>
+
+  <Rule ID ="1005" Title="人为紧急事件" IsVS="True">
+    <RootExpression Type="TVSCombOrderExpression" MatchedIndex="1" BeginIndex="1" EndIndex="1" Title="管压为0管压上升且小于300管压大于等于300后置判断第2和第3步骤在5秒内">
+      <Express Type="TVSCompExpression" Key="30001" OperatorSignal="2" Value="0" Title="管压为0" />
+      <Express ExpressID="1005_1" Type="TVSCombAndExpression" Title="管压上升且管压小于300">
+        <Express Type="TVSOrderExpression" Key="30001" Order="0" Title="管压上升"/>
+        <Express Type="TVSCompExpression" Key="30001" OperatorSignal="1" Value="300" Title="管压小于300" />
+      </Express>
+      <Express ExpressID="1005_2" Type="TVSCompExpression" Key="30001" OperatorSignal="4" Value="300" Title="管压大于等于300" />
+      <Express Type="TVSCompBehindExpression" Key="30006" OperatorSignal="3" CompDataType="1" Value="5" FrontExp="1005_1" BehindExp="1005_2"  Title="开始上升到上升到300的时间小于等于5秒"/>
+    </RootExpression>
+  </Rule>
+
+  <Rule ID ="1006" Title="进入调车事件" IsVS="True">
+    <RootExpression Type="TVSCompExpression" Key="20000" OperatorSignal="2" Value="34318" Title="事件为进入调车" />      
+  </Rule>
+
+  <Rule ID ="1007" Title="退出调车事件" IsVS="True">
+    <RootExpression Type="TVSCompExpression" Key="20000" OperatorSignal="2" Value="34319" Title="事件为进入调车" />
+  </Rule>
+
+  <Rule ID ="1008" Title="调车区域事件" IsVS="True">
+    <RootExpression Type="TVSCombIntervalExpression" MatchFirst="False" MatchMatch="True" ReturnType="2" Title="调车开车到停车之间有速度大于3的">
+      <BeginExpress Type="TVSCompExpression" Key="20000" OperatorSignal="2" Value="34590" Title="事件为调车开车"/>
+      <Expression Type="TVSCompExpression" Key="30002" OperatorSignal="4" Value="3" Title="速度大于等于3"/>
+      <EndExpress Type="TVSCompExpression" Key="20000" OperatorSignal="2" Value="34582" Title="事件为调车停车"/>
+    </RootExpression>
+  </Rule>
+
+  <Rule ID ="1009" Title="红黄灯信号事件" IsVS="True">
+    <RootExpression Type="TVSCompExpression" Key="30008" OperatorSignal="2" Value="8" Title="信号灯为红黄灯" />
+  </Rule>
+
+  <Rule ID ="1011" Title="信号故障事件" IsVS="True">
+    <RootExpression Type="TVSCombIntervalExpression" MatchFirst="False" MatchMatch="True" ReturnType="2" Title="信号灯从灭灯到进行信号">
+      <BeginExpress Type="TVSCompExpression" Key="30008" OperatorSignal="2" Value="12" Title="信号灯为灭灯"/>
+      <Expression Type="TVSCompExpression" Key="30008" OperatorSignal="2" Value="12" Title="信号灯为灭灯"/>
+      <EndExpress Type="TVSCompExpression" Key="20000" OperatorSignal="2" Value="35329" Title="机车信号变化"/>
+    </RootExpression>
+  </Rule>
+</RunrecordRules>

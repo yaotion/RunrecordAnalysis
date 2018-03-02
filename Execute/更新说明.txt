@@ -1,0 +1,22 @@
+更换新组件前，请先删除旧组件的DCU
+删除 uRunTimerFileReader单元  引用时可按需要引用uRtfmtFileReader、uRtOrgFileReader、uRtAdoFileReader
+uRunTimeFileReaderEx 单元重命名为 uRtfmtFileReader、
+uHeadInfoReader 单元重命名为 uRtHeadInfoReader
+
+新增加单元  uRtOrgFileReader、
+新增加单元  uConvertDefine
+uRtfmtFileReader、uRtOrgFileReader、uRtAdoFileReader、uRtFileReaderBase、uXMLlkjFileReader,uRtHeadInfoReader
+
+原TLKJRuntimeOrgReader  拆分为三个类TAdoFileReader、TOrgFileReader、TfmtFileReader
+
+原使用TLKJRuntimeOrgReader.LoadFromFile方法  更换为TAdoFileReader.LoadFromFile
+原使用TLKJRuntimeOrgReader.LoadFromFiles方法  更换为TAdoFileReader.LoadFromFiles
+
+原使用TLKJRuntimeOrgReader.LoadFromFileEx方法  更换为TfmtFileReader.LoadFromFile
+原使用TLKJRuntimeOrgReader.LoadFromFilesEx方法  更换为TfmtFileReader.LoadFromFiles
+
+更换borlndmm.dll动态库
+
+
+
+
